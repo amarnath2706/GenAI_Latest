@@ -5,3 +5,5 @@ python-dotenv==1.0.1
 langchain-groq==0.1.6 #access alternative opensource model
 bs4==0.0.2
 unstructured==0.15.0
+pypdf==4.3.1
+
