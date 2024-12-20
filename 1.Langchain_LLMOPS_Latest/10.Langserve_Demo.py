@@ -17,7 +17,8 @@ parser = StrOutputParser()
 
 #system prompt tempalte
 system_template = "Translate the following into {language}:"
-
+ 
+#create the prompt template
 prompt_template = ChatPromptTemplate.from_messages([
     ('system', system_template),
     ('user', '{text}')
