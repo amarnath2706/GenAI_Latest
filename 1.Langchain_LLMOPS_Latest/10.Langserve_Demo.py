@@ -24,6 +24,7 @@ prompt_template = ChatPromptTemplate.from_messages([
     ('user', '{text}')
 ])
 
+#create a chain LCEL
 chain = prompt_template | llm | parser
 
 
