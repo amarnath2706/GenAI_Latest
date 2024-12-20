@@ -15,6 +15,7 @@ llm = ChatOpenAI(model="gpt-3.5-turbo")
 
 parser = StrOutputParser()
 
+#system prompt tempalte
 system_template = "Translate the following into {language}:"
 
 prompt_template = ChatPromptTemplate.from_messages([
