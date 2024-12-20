@@ -5,7 +5,7 @@ from langchain_openai import ChatOpenAI
 from dotenv import load_dotenv, find_dotenv
 from fastapi import FastAPI #langserve
 from langserve import add_routes #langserve
-import uvicorn
+import uvicorn #application intialization
 
 
 _ = load_dotenv(find_dotenv())
@@ -41,5 +41,6 @@ add_routes(
     path="/chain",
 )
 
+#initialize the application
 if __name__ == "__main__":
     uvicorn.run(app, host="localhost", port=8000)
