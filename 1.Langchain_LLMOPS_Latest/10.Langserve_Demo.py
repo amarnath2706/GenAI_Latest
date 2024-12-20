@@ -27,7 +27,7 @@ prompt_template = ChatPromptTemplate.from_messages([
 #create a chain LCEL
 chain = prompt_template | llm | parser
 
-
+#Syntax for fastapi
 app = FastAPI(
   title="SimpleTranslator",
   version="1.0",
