@@ -3,8 +3,8 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from langchain_openai import ChatOpenAI
 from dotenv import load_dotenv, find_dotenv
-from fastapi import FastAPI
-from langserve import add_routes
+from fastapi import FastAPI #langserve
+from langserve import add_routes #langserve
 import uvicorn
 
 
